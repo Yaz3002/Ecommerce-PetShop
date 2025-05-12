@@ -1,0 +1,278 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 325 77% 78%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 60 100% 97%;
+    --secondary-foreground: 220 10% 40%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 274 100% 93%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 325 77% 78%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 325 77% 78%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 60 100% 97%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 274 100% 93%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+/* Set the base font size to be at least 16px and use Nunito for body, Poppins for headings */
+html {
+  @apply text-base;
+  font-size: 16px;
+}
+
+body {
+  @apply font-sans;
+  font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Heading sizes */
+h1 { @apply text-4xl md:text-5xl font-bold; }
+h2 { @apply text-3xl md:text-4xl font-bold; }
+h3 { @apply text-2xl md:text-3xl font-semibold; }
+h4 { @apply text-xl md:text-2xl font-semibold; }
+h5 { @apply text-lg md:text-xl font-medium; }
+h6 { @apply text-base md:text-lg font-medium; }
+
+/* Animation classes */
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.8s ease-out forwards;
+}
+
+.animate-bounce-in {
+  animation: bounceIn 0.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Hover effects */
+.hover-grow {
+  @apply transition-all duration-300;
+}
+.hover-grow:hover {
+  @apply transform scale-105;
+}
+
+/* Text link animation */
+.animated-link {
+  @apply relative inline-block;
+}
+.animated-link::after {
+  @apply content-[''] absolute left-0 bottom-0 w-full h-0.5 bg-primary transform scale-x-0 transition-transform duration-300 origin-left;
+}
+.animated-link:hover::after {
+  @apply scale-x-100;
+}
+
+/* Glassmorphism */
+.glass {
+  @apply bg-white bg-opacity-20 backdrop-blur-lg border border-white border-opacity-20 shadow-lg;
+}
+
+/* Card hover effect */
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/50 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary;
+}
+
+/* BEM methodology classes */
+.product-card {
+  @apply relative overflow-hidden rounded-lg;
+}
+
+.product-card__image-container {
+  @apply overflow-hidden aspect-square;
+}
+
+.product-card__image {
+  @apply w-full h-full object-cover transition-transform duration-300;
+}
+
+.product-card:hover .product-card__image {
+  @apply scale-110;
+}
+
+.product-card__content {
+  @apply p-4;
+}
+
+.product-card__title {
+  @apply font-medium text-lg;
+}
+
+.product-card__price {
+  @apply font-bold text-primary;
+}
+
+.product-card__badge {
+  @apply absolute top-2 right-2 bg-primary text-white text-xs px-2 py-1 rounded-full;
+}
+
+/* Instagram gallery */
+.instagram-gallery {
+  @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2;
+}
+
+.instagram-item {
+  @apply aspect-square overflow-hidden rounded-md relative;
+}
+
+.instagram-item__image {
+  @apply w-full h-full object-cover transition-all duration-300;
+}
+
+.instagram-item__overlay {
+  @apply absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center opacity-0 transition-all duration-300;
+}
+
+.instagram-item:hover .instagram-item__overlay {
+  @apply bg-opacity-30 opacity-100;
+}
+
+.instagram-item:hover .instagram-item__image {
+  @apply scale-110;
+}
+
+/* Hero section with overlay */
+.hero-overlay {
+  @apply absolute inset-0 bg-gradient-to-r from-black/50 to-transparent;
+}
