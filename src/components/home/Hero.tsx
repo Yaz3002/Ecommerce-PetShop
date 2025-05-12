@@ -21,16 +21,13 @@ const Hero = () => {
     <section className="relative h-[500px] md:h-[600px] overflow-hidden">
       {/* Hero image */}
       <div className="absolute inset-0">
-        <video
-      autoPlay
-      muted
-      loop
-      playsInline
-      className="w-full h-full object-cover"
-    >
-      <source src="public/img/fondo_hero.mp4" type="video/mp4" /></video>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/10"></div>
-      </div>
+  <img 
+    src="https://s1.1zoom.me/big0/936/Dogs_Cats_Pink_color_Poodle_Glance_Welsh_Corgi_556524_1280x853.jpg" 
+    alt="Imagen de perros y gatos"
+    className="w-full h-full object-cover"
+  />
+  <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/10"></div>
+</div>
 
       {/* Content */}
       <div className="relative h-full container mx-auto px-4 flex flex-col justify-center items-start">
