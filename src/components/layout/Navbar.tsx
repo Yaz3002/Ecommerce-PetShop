@@ -57,15 +57,15 @@ const Navbar = () => {
         <nav className="h-16 md:h-20 flex items-center justify-between">
           {/* Logo - Now only shows the image with Link */}
           <Link to="/" className="flex items-center text-primary">
-            <motion.img 
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              src="./img/ad647077-ad9e-4854-ada6-3d2080b74bc2.png" 
-              alt="Purrfect Paws Logo" 
-              className="h-14 md:h-16 w-auto" 
-            />
-          </Link>
+  <motion.img 
+    initial={{ scale: 0.9, opacity: 0 }}
+    animate={{ scale: 1, opacity: 1 }}
+    transition={{ duration: 0.5 }}
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwquJO42y42jnvzKA5A3jRajg_2shwCp6taw&s" 
+    alt="Purrfect Paws Logo" 
+    className="h-14 md:h-16 w-auto" 
+  />
+</Link>
 
           {/* Mobile menu button */}
           <button 

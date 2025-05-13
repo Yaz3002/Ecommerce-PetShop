@@ -16,7 +16,7 @@ const Footer = () => {
               <motion.img 
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
-                src="./img/ad647077-ad9e-4854-ada6-3d2080b74bc2.png" 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwquJO42y42jnvzKA5A3jRajg_2shwCp6taw&s" 
                 alt="Purrfect Paws Logo" 
                 className="h-14 w-auto" 
               />

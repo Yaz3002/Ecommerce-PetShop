@@ -113,7 +113,7 @@ const InstagramFeed = () => {
                       <div className="flex items-center p-3 border-b">
                         <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-yellow-300 via-red-400 to-purple-500 p-0.5 mr-2">
                           <div className="w-full h-full rounded-full bg-white p-0.5 flex items-center justify-center">
-                            <img src="./img/ad647077-ad9e-4854-ada6-3d2080b74bc2.png" alt="Profile" className="w-full h-full rounded-full object-cover" />
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwquJO42y42jnvzKA5A3jRajg_2shwCp6taw&s" alt="Profile" className="w-full h-full rounded-full object-cover" />
                           </div>
                         </div>
                         <div className="text-sm">
