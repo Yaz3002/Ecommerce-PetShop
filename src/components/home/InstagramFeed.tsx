@@ -9,8 +9,8 @@ const InstagramFeed = () => {
   const instagramPosts = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1583337426008-2fef51aa2a16?q=80&w=400",
-      caption: "Nuestro nuevo suéter para perros pequeños ya disponible 🐕❤️",
+      image: "https://i.pinimg.com/originals/aa/63/c3/aa63c3ba62a63fe7459b4e690a3fa721.png?q=80&w=400",
+      caption: "Celebremos el cariño de nuestras mascotas🐕❤️",
       username: "purrfectpaws",
       likes: 243,
       comments: 18,
@@ -19,7 +19,7 @@ const InstagramFeed = () => {
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1589883661923-6476cb0ae9f2?q=80&w=400",
+      image: "https://i.pinimg.com/236x/33/05/c5/3305c5037661d5e50705b88fa7139231.jpg?q=80&w=400",
       caption: "Los mejores amigos merecen lo mejor 🐾",
       username: "purrfectpaws",
       likes: 187,
@@ -29,7 +29,7 @@ const InstagramFeed = () => {
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1592754862816-1a21a4ea2281?q=80&w=400",
+      image: "https://i.pinimg.com/originals/15/80/63/158063ed507270d1c1e58cd41589fcc3.jpg?q=80&w=400",
       caption: "Nuevos diseños para el verano! ☀️",
       username: "purrfectpaws",
       likes: 315,
@@ -39,7 +39,7 @@ const InstagramFeed = () => {
     },
     {
       id: 4,
-      image: "https://images.unsplash.com/photo-1536590158209-e9d615d525e4?q=80&w=400",
+      image: "https://unachicaysugato.wordpress.com/wp-content/uploads/2012/01/403824_10100841944523328_10718391_60365861_1842968560_n.jpg?q=80&w=400",
       caption: "Personaliza el disfraz de tu gatito 🐱",
       username: "purrfectpaws",
       likes: 165,
@@ -49,7 +49,7 @@ const InstagramFeed = () => {
     },
     {
       id: 5,
-      image: "https://images.unsplash.com/photo-1618369524130-160fb94122b7?q=80&w=400",
+      image: "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/08ca50c8b10664526d7ea1ad13333cc8.jpg?imageView2/2/w/500/q/60/format/webp?q=80&w=400",
       caption: "Visita nuestra tienda y encuentra el outfit perfecto",
       username: "purrfectpaws",
       likes: 198,
