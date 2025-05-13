@@ -19,7 +19,7 @@ const SizingGuide = () => {
           
           <div className="md:w-1/2">
             <img 
-              src="https://images.unsplash.com/photo-1594922009922-d1665ed9b32d?q=80&w=800" 
+              src="https://perros-beagle.com/wp-content/uploads/2012/12/medir-talla-en-perros.jpg" 
               alt="Perro con sweater" 
               className="rounded-xl shadow-md w-full h-64 object-cover"
             />

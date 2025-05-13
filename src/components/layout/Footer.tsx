@@ -10,7 +10,6 @@ const Footer = () => {
     <footer className="bg-pastel-purple py-16 border-t mt-16">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {/* Logo and About */}
           <div className="space-y-6">
             <Link to="/" className="flex items-center space-x-2 text-primary">
               <motion.img 

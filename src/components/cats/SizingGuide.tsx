@@ -19,7 +19,7 @@ const SizingGuide = () => {
           
           <div className="md:w-1/2">
             <img 
-              src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?q=80&w=800" 
+              src="https://i.pinimg.com/736x/14/3a/81/143a81b3e868dcdf6fe69b82effde113.jpg?q=80&w=800" 
               alt="Gato con ropa" 
               className="rounded-xl shadow-md w-full h-64 object-cover"
             />

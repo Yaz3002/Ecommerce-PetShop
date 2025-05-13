@@ -52,7 +52,6 @@ const Index = () => {
           </FeaturedProducts>
         </section>
         
-        {/* Enhanced Categories Section - modified to remove buttons */}
         <Categories />
         
         {/* Testimonials Section */}
@@ -77,13 +76,13 @@ const Index = () => {
                 {
                   name: "Rocky",
                   owner: "Miguel A.",
-                  image: "https://images.unsplash.com/photo-1520087619250-584c0cbd35e8?q=80&w=600",
+                  image: "https://img.freepik.com/fotos-premium/bulldog-frances-sentado-chaqueta-invierno-perro-paseo-invierno-ropa-calida-perros_700081-3090.jpg?q=80&w=600",
                   quote: "La calidad de la ropa es excelente. Rocky se ve genial con su nueva chaqueta y es muy resistente."
                 },
                 {
                   name: "Mia",
                   owner: "Ana P.",
-                  image: "https://images.unsplash.com/photo-1533738363-b7f9aef128ce?q=80&w=600",
+                  image: "https://i.pinimg.com/736x/43/bf/38/43bf3896457596516e182667d9a702bb.jpg?q=80&w=600",
                   quote: "El disfraz de Mia fue un éxito en la fiesta. La tela es de gran calidad y le quedó perfecto."
                 }
               ].map((testimonial, index) => (
