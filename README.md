@@ -6,3 +6,5 @@ Este proyecto usa tecnologia:
 - shadcn-ui
 - Tailwind CSS
 
+visita el sittio:
+https://yaz3002.github.io/Ecommerce-PetShop/
